@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(?<path>.*)",
+      "dest": "/api/index?route=$1",
+      "continue": true
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index"
+    }
+  ]
+}
